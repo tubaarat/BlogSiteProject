@@ -1,0 +1,104 @@
+﻿body {
+    background-color: #f8f9fa;
+    font-family:'Times New Roman';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Times New Roman';
+}
+
+.btn-style {
+    background-color: #343a40;
+    font-family: 'Times New Roman';
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+    .btn-style:hover {
+        background-color: rgba(52, 58, 64, 0.60);
+        font-family: 'Times New Roman';
+    }
+
+.txtBox-style {
+    width: 150px;
+    height: 25px;
+    border: 1px dotted #343a40;
+    padding: 2px;
+    margin: 2px;
+}
+
+.dropDownList-style {
+    height: 25px;
+    width: auto;
+    border: 1px dotted #343a40;
+}
+
+.box {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    font-family: 'Times New Roman';
+}
+
+    .box .slider {
+        width: 1000px;
+        font-family: 'Times New Roman';
+        height: 50px;
+        float: left;
+        background-color: #343a40;
+    }
+
+    .box .page-body {
+        font-family: 'Times New Roman';
+        width: 1000px;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+    }
+
+        .box .page-body .body-left {
+            font-family: 'Times New Roman';
+            width: 270px;
+            height: auto;
+            float: left;
+        }
+
+            .box .page-body .body-left .leftheader {
+                width: 100%;
+                font-family: 'Times New Roman';
+                height: 30px;
+                float: left;
+                background-color: #343a40;
+                border: 1px dotted #343a40;
+                color: #ffffff;
+                line-height: 30px;
+            }
+
+            .box .page-body .body-left .leftcontent {
+                width: 100%;
+                font-family: 'Times New Roman';
+                height: auto;
+                float: left;
+                border: 1px dotted #343a40;
+            }
+
+        .box .page-body .body-right {
+            width: 700px;
+            font-family: 'Times New Roman';
+            height: 700px;
+            float: right;
+            border: 1px dotted #343a40;
+        }
+
+    .box .footer {
+        width: 100%;
+        font-family: 'Times New Roman';
+        height: 30px;
+        float: left;
+        background-color: #343a40;
+        margin-top: 10px;
+    }

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BlogSiteProject.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <script src="../ckeditor/ckeditor.js"></script>
+    <title>Admin Paneli</title>
+    <link href="~/Admin/Admin.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="box">
+            <div class="slider" style="color:white; text-align:center; vertical-align:middle; font-weight:bold">
+                <br />
+                YÖNETİCİ PANELİ</div>   
+            <div class="menu"></div>
+            <div class="page-body">
+                <div class="body-left" style="height: auto">
+                    <div class="leftheader" style="color: #ffffff; line-height: 30px;">MENU</div>
+                    <div class="leftcontent" style="height: auto">
+                        <div style="height: 25px; color: #343a40; font-weight: bolder; margin-top: 3px; background-image: url(../images/menubgimg.jpg); background-repeat: repeat-x;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Categories.aspx" style="text-decoration: none; color: #343a40; font-family: 'times New Roman', Times, serif;">Kategoriler</a>
+                        </div>
+                        <div style="height: 25px; color: #343a40; font-weight: bolder; margin-top: 3px; background-image: url(../images/menubgimg.jpg); background-repeat: repeat-x; font-family: 'times New Roman', Times, serif;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Articles.aspx" style="text-decoration: none; color: #343a40">Makaleler</a>
+                        </div>
+                        <div style="height: 25px; color: #343a40; font-weight: bolder; margin-top: 3px; background-image: url(../images/menubgimg.jpg); background-repeat: repeat-x;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Comments.aspx" style="text-decoration: none; color: #343a40; font-family: 'times New Roman', Times, serif;">Yorumlar</a>
+                        </div>                        
+                        <div style="height: 25px; color: #343a40; font-weight: bolder; margin-top: 3px; background-image: url(../images/menubgimg.jpg); background-repeat: repeat-x;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Announcements.aspx" style="text-decoration: none; color: #343a40; font-family: 'times New Roman', Times, serif;">Duyurular</a>
+                        </div>
+                        <div style="height: 25px; color: #343a40; font-weight: bolder; margin-top: 3px; background-image: url(../images/menubgimg.jpg); background-repeat: repeat-x;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Login.aspx" style="text-decoration: none; color: #343a40; font-family: 'times New Roman', Times, serif;">Çıkış</a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="body-right">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
