@@ -1,0 +1,138 @@
+﻿body {
+    background-color: #f8f9fa;
+    font-family: 'Times New Roman';
+}
+
+* {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+
+    a:hover {
+        font-weight: bolder;
+        font-family: 'Times New Roman';
+    }
+
+    a:after {
+        color: black;
+        font-family: 'Times New Roman';
+    }
+
+.menubutton {
+    font-family: 'Times New Roman';
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: white;
+    color: #343a40;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 16px;
+    float: left;
+}
+
+    .menubutton:hover {
+        font-family: 'Times New Roman';
+        font-weight: bold;
+    }
+
+.btn-style {
+    font-family: 'Times New Roman';
+    background-color: #343a40;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+    .btn-style:hover {
+        font-family: 'Times New Roman';
+        background-color: rgba(52, 58, 64, 0.60);
+    }
+
+.txtBox-style {
+    font-family: 'Times New Roman';
+    width: 150px;
+    height: 25px;
+    border: 1px dotted #343a40;
+    padding: 2px;
+    margin: 2px;
+}
+
+.box {
+    font-family: 'Times New Roman';
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    .box .slider {
+        font-family: 'Times New Roman';
+        width: 1000px;
+        height: 50px;
+        float: left;
+        background-color: #343a40;
+    }
+
+    .box .menu {
+        font-family: 'Times New Roman';
+        width: 1000px;
+        height: 40px;
+        float: left;
+        background-color: #343a40;
+        margin-top: 5px;
+    }
+
+    .box .page-body {
+        font-family: 'Times New Roman';
+        width: 1000px;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+    }
+
+        .box .page-body .body-left {
+            font-family: 'Times New Roman';
+            width: 270px;
+            height: auto;
+            float: left;
+        }
+
+            .box .page-body .body-left .leftheader {
+                font-family: 'Times New Roman';
+                width: 100%;
+                height: 30px;
+                float: left;
+                color: white;
+                background-color: #343a40;
+                border: 1px dotted #343a40;
+                color: white;
+                line-height: 30px;
+                font-weight: bolder;
+                font-size: 16px;
+            }
+
+            .box .page-body .body-left .leftcontent {
+                font-family: 'Times New Roman';
+                width: 100%;
+                height: auto;
+                float: left;
+                border: 1px dotted #343a40;
+            }
+
+        .box .page-body .body-right {
+            font-family: 'Times New Roman';
+            width: 700px;
+            height: auto;
+            float: right;
+            border: 1px dotted #343a40;
+        }
+
+   

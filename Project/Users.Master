@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Users.master.cs" Inherits="BlogSiteProject.Users" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Blog Sitesi</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="User.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            width: 30px;
+        }
+
+        .auto-style3 {
+            height: 22px;
+        }
+
+        .box .footer {
+            font-family: 'Times New Roman';
+            width: 100%;
+            height: 30px;
+            float: left;
+            background-color: #343a40;
+            margin-top: 10px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="box">
+            <div class="slider" style="color: white; text-align: center; font-size: 18px; font-weight: bold; vertical-align: middle;">
+                YAZILIM BLOĞUM
+            </div>
+            <div class="menu">
+                <div style="width: 269px; height: 40px; border-right-style: dotted; border-right-width: 1px; border-right-color: #808080; float: left; color: #FFFFFF; font-size: 24px; text-align: center; line-height: 40px">
+                    Hoşgeldiniz...
+                </div>
+                <div style="width: 700px; height: 40px; float: right">
+                    <a href="Default.aspx">
+                        <div class="menubutton">
+                            Anasayfa
+                        </div>
+                    </a>
+                    <a href="About.aspx">
+                        <div class="menubutton">Hakkımızda</div>
+                    </a>
+                    <a href="Contact.aspx">
+                        <div class="menubutton">İletişim</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="page-body">
+                <div class="body-left">
+                    <div class="leftheader">Duyurular</div>
+                    <div class="leftcontent">
+                        <asp:DataList ID="dlAnnouncement" runat="server" Width="100%">
+                            <ItemTemplate>
+                                <table class="auto-style1">
+                                    <tr>
+                                        <td class="auto-style2">
+                                            <asp:Image ID="Image1" runat="server" Height="30px" ImageUrl='<%# Eval("announcePicture") %>' Width="30px" />
+                                        </td>
+                                        <td style="width: 230px; text-align: left">
+                                            <asp:Label ID="lblAnnounceHeader" runat="server" Text='<%# Eval("announceHeader") %>'></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style3" colspan="2">
+                                            <asp:Label ID="lblAnnounceContent" runat="server" Text='<%# Eval("announceContent") %>'></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: right; font-size: small; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #808080;">
+                                            <asp:Label ID="lblAnnounceDate" runat="server" Text='<%# Eval("announceTime","{0:dd MMMM yyyy}") %>'></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </div>
+                    <div style="height: 30px; float: left; width: 100%"></div>
+                    <div class="leftheader">Kategoriler</div>
+                    <div class="leftcontent">
+                        <asp:DataList ID="dlGetCategory" runat="server">
+                            <ItemTemplate>
+                                <table class="auto-style1" style="background-color: #f8f9fa;">
+                                    <tr>
+                                        <td style="width: 30px">
+                                            <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl='<%# Eval("categoryPicture") %>' Width="30px" />
+                                        </td>
+                                        <td style="width: 230px">
+                                            <a href="CategoryDetails.aspx?categoryID=<%#Eval("categoryID") %>">
+                                                <asp:Label ID="lblCategoryNAme" runat="server" Text='<%# Eval("categoryName") %>' ForeColor="Black"></asp:Label></a>
+                                            (<asp:Label ID="lblCategoryCount" runat="server" Text='<%# Eval("categoryPiece") %>'></asp:Label>
+                                            )</td>
+                                    </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </div>
+                </div>
+
+                <div class="body-right">
+                    <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+                </div>
+
+
+            </div>
+            <div class="footer">Tuba ARAT - 2018</div>
+        </div>
+
+    </form>
+</body>
+</html>
